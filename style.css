@@ -195,7 +195,7 @@ main{
 }
 
 .popular{
-    height: 110vh;
+    min-height: 110vh;
     width: 100%;
 
 }
@@ -214,11 +214,11 @@ main{
     margin-bottom: 2%;
 }
 
-.pop-main h1::after{
+.pop-main .pop-main-h1::after{
     background-color: red;
     
     height: 10%;
-    width: 100%;
+    width: 0;
 
     content: "";
     position: absolute;
@@ -228,7 +228,7 @@ main{
     transition: .4s ease;
 }
 
-.pop-main h1:hover::after{
+.pop-main .pop-main-h1:hover::after{
     width: 100%;
 }
 
@@ -244,27 +244,58 @@ main{
     width: 100%;
     position: relative;
 
+    overflow: hidden;
     border-radius: 15px;
+}
+
+/*pop images hover effect*/
+.pop-card img:hover{
+    transform: scale(1.03);
+}
+.pop-card:hover .text-box{
+    opacity: 1;
 }
 
 .pop-card img{
     height: 100%;
     width: 100%;
 
+    transition: .5s ease;
     border-radius: 15px;
 }
 
 .text-box{
     position: absolute;
     bottom: 0;
+    padding: 5%;
 
     height:40%;
     width: 100%; 
 
-    filter: opacity(0);
-    border-radius: 15px;
+    filter: opacity(1);
+    box-sizing: border-box;
 
-    background-color: red;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    opacity: 0;
+    transition: .4s ease;
+    color: #ad61f5;
+    background-color: #3d2c5bd4;
+    border: 2px solid #43297b8a;
+}
+
+.text-box .text-box-h1{
+    padding: 0 1%;
+    font-size: x-large;
+    border-left: 7px solid blue;
+    border-right: 7px solid blue;
+    border-radius: 10px;
+}
+
+/*textbox div hover*/
+.text-box:hover{
+    transform: scale(1.03);
 }
 
 footer{
