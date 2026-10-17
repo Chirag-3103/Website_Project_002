@@ -211,11 +211,13 @@ main{
     height: max-content;
     width: max-content;
     position: relative;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    color: #ad61f5;
 }
 
 .pop-main .pop-main-h1::after{
-    background-color: red;
+    background-color: #9433ef;
     
     height: 10%;
     width: 0;
@@ -223,7 +225,7 @@ main{
     content: "";
     position: absolute;
     left:0;
-    bottom: 0%;
+    bottom: 0;
     border-radius: 20px;
     transition: .4s ease;
 }
@@ -280,7 +282,7 @@ main{
 
     opacity: 0;
     transition: .4s ease;
-    color: #ad61f5;
+    color: #bb86ec;
     background-color: #3d2c5bd4;
     border: 2px solid #43297b8a;
 }
@@ -288,14 +290,98 @@ main{
 .text-box .text-box-h1{
     padding: 0 1%;
     font-size: x-large;
-    border-left: 7px solid blue;
-    border-right: 7px solid blue;
-    border-radius: 10px;
 }
 
 /*textbox div hover*/
 .text-box:hover{
     transform: scale(1.03);
+}
+
+/*Genre section starts from here*/
+.genre-main{
+    min-height: 90vh;
+    width: 100%;
+    padding: 3%;
+
+    box-sizing: border-box;
+}
+
+.genre-main-h1{
+    color: #ad61f5;
+    width: max-content;
+    height: max-content;
+    margin-bottom: 2%;
+    position:relative;
+}
+
+.genre-main-h1::after{
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 8%;
+    width: 0;
+    transition: .3s ease;
+
+    border-radius: 25px;
+    background-color: #7f21d6;
+}
+
+/*h1 hover*/
+.genre-main-h1:hover::after{
+    width: 100%;
+}
+
+.genre-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2%;
+    
+}
+
+.genre-card{
+    height: 45vh;
+    width: 100%;
+    margin: 1%;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    background-color: #3d2c5ba0;
+    border: 2px solid #43297b8a;
+    border-radius: 20px;
+}
+
+.genre-card img{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    border-radius: 20px;
+}
+/*image gets hover effect*/
+.genre-card img:hover{
+    opacity: 40%;
+}
+
+.genre-text{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1%;
+    text-align: center;
+    color: #9a57d8;
+    transition: .3s ease;
+    
+}
+
+.genre-text:hover{
+    color: #d4bbeb;
 }
 
 footer{
