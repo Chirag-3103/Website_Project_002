@@ -71,14 +71,14 @@ nav{
 main{
     grid-area: main;
 
-    min-height: 400vh;
+    min-height: 300vh;
     width: 99vw;
 
     background-color: lightblue;
 }
 
 .feature{
-    height: 90vh;
+    min-height: 90vh;
     width: 100%;
 
     background-image: url(image/sekiro-feature.jpg);
@@ -377,11 +377,148 @@ main{
     text-align: center;
     color: #9a57d8;
     transition: .3s ease;
-    
+
+    border: 2px solid purple;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
 }
 
 .genre-text:hover{
-    color: #d4bbeb;
+    color: #5c2d88;
+    border: 2px solid purple;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.news{
+    min-height: 110vh;
+    width: 100%; 
+}
+
+.newsmain{
+    height: 50%;
+    width: 100%; 
+    box-sizing: border-box;
+
+    padding: 1%;
+}
+
+.top2-news{
+    height: 50%;
+    width: 100%;
+}
+.news-grid{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5%;
+    padding: 1% 2.5%;
+    box-sizing: border-box;
+}
+
+.topnews{
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+
+    border: 2px solid green;
+    border-radius: 15px;
+}
+
+.topnews img{
+    height: 70%;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.top-news-text{
+    height: 30%;
+    width: 100%;
+    padding: 1%;
+
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.top-news-text p{
+    font-size: 24px;
+    padding: 1% 0 2% 0;
+    box-sizing: border-box;
+}
+
+.top-news-text .a1{
+    font-size: 17px;
+    text-decoration: none;
+    color: red;
+    box-sizing: border-box;
+}
+
+.news-extra{
+    min-height: 60vh;
+    width: 100%;
+    padding: 1%;
+    margin: 1% 0 0 0;
+    
+    box-sizing: border-box;
+}
+
+.one-extra-h1{
+    padding: 3% 3% 0.5% 3%;
+}
+
+.extra-row-grid{
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+}
+
+.extra-col-grid{
+    height: 26vh;
+    width: 100%;
+    padding: 1% 3%;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: .7fr 4fr;
+    gap: 1%;
+}
+
+.extra-col-grid img{
+    height: 100%;
+    width: 70%;
+    padding: 1%;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.extra-text{
+    padding: 4% 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.p-extra{
+    font-size: 22px;
+    width: 100%;
+}
+
+.a-extra{
+    text-decoration: none;
+    position: absolute;
+    font-size: 19px;
+    bottom: 24.5%;
+}
+
+.extra-text .a-extra2{
+    position: absolute;
+    bottom: 14.5%;
 }
 
 footer{
