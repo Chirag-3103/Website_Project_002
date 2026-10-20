@@ -423,7 +423,7 @@ main{
 
     position: relative;
 
-    border: 2px solid green;
+    border: 2px solid rgb(176, 15, 176);
     border-radius: 15px;
 }
 
@@ -438,6 +438,7 @@ main{
     height: 30%;
     width: 100%;
     padding: 1%;
+    color: #8216e8;
 
     position: absolute;
     bottom: 0;
@@ -448,6 +449,8 @@ main{
     font-size: 24px;
     padding: 1% 0 2% 0;
     box-sizing: border-box;
+
+    transition: .4s ease;
 }
 
 .top-news-text .a1{
@@ -455,6 +458,15 @@ main{
     text-decoration: none;
     color: red;
     box-sizing: border-box;
+    color: #8216e8;
+}
+
+.top-news-text p:hover{
+    color: white;
+}
+
+.a1:hover{
+    color: white;
 }
 
 .news-extra{
@@ -468,6 +480,9 @@ main{
 
 .one-extra-h1{
     padding: 3% 3% 0.5% 3%;
+    color: #552186;
+    margin-bottom: 1%;
+
 }
 
 .extra-row-grid{
@@ -479,6 +494,10 @@ main{
     grid-template-rows: repeat(4,1fr);
 }
 
+.firstchild{
+    border-top: 3px solid #8216e8;
+}
+
 .extra-col-grid{
     height: 26vh;
     width: 100%;
@@ -488,6 +507,7 @@ main{
     display: grid;
     grid-template-columns: .7fr 4fr;
     gap: 1%;
+    border-bottom: 3px solid #8216e8;
 }
 
 .extra-col-grid img{
@@ -499,9 +519,10 @@ main{
 }
 
 .extra-text{
-    padding: 4% 0;
+    padding: 4% 10% 4% 0;
     box-sizing: border-box;
     position: relative;
+    color: #5c2d88;
 }
 
 .p-extra{
@@ -523,4 +544,78 @@ main{
 
 footer{
     grid-area: footer;
+    background-color: yellow;
+
+    min-height: 50vh;
+}
+
+.flex-div-main{
+    height: 25vh;
+    display: flex;
+
+    box-sizing: border-box;
+
+}
+
+.flex1{
+    height: 100%;
+    width: 50%;
+    padding: 1%;
+    box-sizing: border-box;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+
+.quick-links{
+    height: max-content;
+    width: max-content;
+    padding: 2%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+}
+
+.link-h2{
+    width: max-content;
+    padding-bottom: 15%;
+}
+
+.q-links{
+    width: max-content;
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 8%;
+}
+
+.footer-text1{
+    height: max-content;
+    width: 30%;
+}
+
+.h1texts{
+    display: flex;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.h1texts i{
+    font-size: 25px;
+    padding-right: 2%;
+}
+
+.footer-links{
+    width: 100%; 
+    font-size: 27px;
+    margin-top: 5%;
+    margin-left: 1%;
+}
+
+.footer-links a{
+    margin-right: 3%;
+}
+
+.footer-links a i{
+    color: rgba(182, 32, 182, 0.773);
 }
